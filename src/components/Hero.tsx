@@ -51,7 +51,7 @@ export default function Hero() {
             <Button 
               variant="outline" 
               size="lg"
-              className="cursor-pointer px-8 py-4 text-lg font-semibold border-2 border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-all duration-300"
+              className="cursor-pointer px-8 py-4 text-lg border-1 text-gray-600 border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-all duration-300"
             >
               <Play className="mr-2 h-5 w-5" />
               Ver Demonstração
