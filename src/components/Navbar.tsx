@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import Logo from '/logo.svg'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,13 +16,14 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20">
+        <div className="flex justify-between items-center h-full">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="cursor-pointer text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <img src={Logo} alt="Logotipo do Site" className='h-16'/>
+            {/* <h1 className="cursor-pointer text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               DreamBringers
-            </h1>
+            </h1> */}
           </div>
 
           {/* Desktop Menu */}
