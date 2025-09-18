@@ -100,7 +100,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="h-12"
+                      className="h-12 border-gray-300 text-gray-600"
                     />
                   </div>
                   <div>
@@ -111,7 +111,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="h-12"
+                      className="h-12 border-gray-300 text-gray-600"
                     />
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="h-12"
+                      className="h-12 border-gray-300 text-gray-600"
                     />
                   </div>
                   <div>
@@ -133,7 +133,7 @@ export default function Contact() {
                       placeholder="Nome da sua loja"
                       value={formData.company}
                       onChange={handleChange}
-                      className="h-12"
+                      className="h-12 border-gray-300 text-gray-600"
                     />
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="resize-none"
+                    className="resize-none border-gray-300 text-gray-600"
                   />
                 </div>
                 
@@ -165,21 +165,19 @@ export default function Contact() {
               {contactInfo.map((info, index) => (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="p-2 bg-gray-50 rounded-lg">
+                    <div className="flex-row space-y-1">
+                      <div className="flex space-x-2 rounded-lg">
                         {info.icon}
-                      </div>
-                      <div>
                         <h3 className="font-semibold text-gray-900 mb-1">
                           {info.title}
                         </h3>
-                        <p className="text-gray-900 font-medium mb-1">
+                      </div>
+                        <p className="text-gray-900 font-medium mb-1 wr">
                           {info.content}
                         </p>
                         <p className="text-sm text-gray-600">
                           {info.description}
                         </p>
-                      </div>
                     </div>
                   </CardContent>
                 </Card>
